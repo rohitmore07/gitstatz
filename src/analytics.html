@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Analytics Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+<body class="bg-[#222223]">
+    <header class="">
+        <nav class="pt-3 fixed top-0 left-0 w-full px-10 shadow-sm shadow-gray-700 bg-[#222223] z-30" id="navBar">
+            <ul class="flex flex-row justify-between p-4 items-center" >
+                <li class="">
+                   <img src="assets/Icons/insights_svg.svg " class="inline align-baseline cursor-pointer"> <span class="font-bold font-sans text-[20px] text-white cursor-pointer">GitInsightX</span>
+                </li>
+                <!-- <li>
+                     <div class="flex justify-center items-center">
+                         <img src="assets/Icons/moon_svg.svg"  id="moon" class="hover:shadow-xl shadow-black hover:rounded-2xl hover:scale-105 transition-all p-2 hover:bg-gray-400">
+                     </div>
+                </li>       -->
+            </ul> 
+        </nav>
+    </header>
+   <main>
+    <section class="mt-120  md: mt-0">
+        <div class="flex flex-col md:flex-row">
+            <!--div1-->
+            <div class="space-y-3 md:w-auto md:fixed md:top-[90px] md:pt-0 pt-20 md:pl-8 w-full p-5">
+                <!--Top div-->
+                <div class="border p-5 rounded-lg flex flex-col justify-center items-center space-y-5 bg-[#d5ea81] ">
+                    <!--A div for profile photo-->
+                    <div>
+                       <img src="assets/Icons/profile-pic.png" class="mt-5 h-40 w-40 object-cover border border-gray-400 shadow-md rounded-full" id="photo">
+                    </div>  
+                    <p class="w-max font-bold" id="name">Rohit More</p>  <!--Name of the searched user--> 
+                    <p class="text-center w-auto max-w-sm md:w-max md:max-w-60" id="bio"> I am Engineer who loves to build things.I am Engineer who loves to build things.</p>   <!--Bio of the searched user--> 
+                    <!--Comapny name, Location etc-->
+                    <div class="flex flex-col space-y-2">
+                        <div class="flex flex-row space-x-2">
+                            <img src="assets/Icons/location_svg.svg">
+                            <p class="inline-block align-middle" id="user_location">Hyderabad</p>
+                        </div> 
+                        <div class="flex flex-row space-x-2">  
+                            <img src="assets/Icons/work_svg.svg">
+                            <p class="inline-block align-middle" id="user_company">ADP</p> 
+                        </div>  
+                    </div>     
+                </div>
+                <!--Bottom div-->
+                <div class="border p-5 rounded-lg bg-[#f8f9f8]"> 
+                    <canvas id="myPieChart" width="250" height="250"></canvas>
+                </div>
+            </div>
+            <!--div2-->
+            <div class="p-5 space-y-3  md:ml-[22%] md:-mr-5 md:mt-20 w-full"> 
+                <div class=" border p-5 rounded-md flex justify-center items-center bg-[#d5ea81]">
+                    <p class="font-bold text-[50px]"><span id="repos">5</span> repos</p>
+                </div>
+                <div class=" border p-5 rounded-md bg-[#f8f9f8]">
+                    <canvas id="barChart" height="500" width="500"></canvas>
+                </div>
+                <div class="border  p-5 rounded-md bg-[#f8f9f8]">
+                    <canvas id="lineChart" height="500" width="500"></canvas>
+                </div>
+            </div>
+            <!--div 3-->
+            <div class="p-5 space-y-3 flex flex-col md:mt-20 md:max-w-screen-md w-full">
+                <!--Top Div-->
+                <div class="border p-5 rounded-md bg-[#d5ea81] space-y-3">
+                    <p class="justify-center items-center flex font-bold text-[30px]">Top 10 Repos</p>
+                    <!--Scrollable div-->
+                    <div class="h-[700px] overflow-auto space-y-3" id="parentDiv">
+                        <!--Card div-->
+                    </div>
+                   
+                </div>
+                <!--Bottom Div-->
+                <div class="border rounded-md bg-[#d5ea81] p-4">
+                    <p class="text-center  font-bold">Made by Rohit</p>
+                    <p class="text-center">Connect</p>
+                    <div class="flex items-center justify-center mt-6">
+                     <a href="https://www.linkedin.com/in/rohitmore07/" target="_blank"><img src="assets/Icons/linkedInsvg.svg"></a>
+                     <a href="https://x.com/rohittmore" target="_blank"><img src="assets/Icons/twitter_svg.svg"></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   </main>
+    <script src="analytics.js">
+    </script>
+</body>
+</html>
