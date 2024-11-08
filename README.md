@@ -1,5 +1,5 @@
 ## Project Title - Gitstatz 📈
-Gitstatz is a web platform that provides users with detailed analysis of GitHub user accounts. With a clean and informative design, it offers an intuitive landing page and a dedicated analysis section for in-depth metrics and insights into GitHub profiles.
+Gitstatz is an online platform that delivers comprehensive insights into GitHub user profiles. Featuring a straightforward and user-friendly design, it includes an inviting landing page and a specialized analysis section, allowing users to explore detailed metrics and information on GitHub accounts.
 
 <h2> 📌 Tech Stack Used :</h2> 
 <img alt="HTML" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/>
